@@ -103,6 +103,12 @@ p {
     padding-bottom: 20px;  
 }
 
+.top-content .text-container-about{
+    width: 98%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -161,4 +167,15 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.flexContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.aboutBox{
+    border:1px solid black;
+	width:48%;
 }
