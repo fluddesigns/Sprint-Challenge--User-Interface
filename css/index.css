@@ -234,10 +234,38 @@ footer nav a {
     background-color:white;
 }
 
+button:hover{
+    background-color:gray;
+    color:white;
+}
+
 .bottomContent {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.form-container{
+    border:1px solid black;
+    border-radius: 6px;
+    padding:2%;
+    background-color:rgb(163, 158, 158);
+    color:white;
+    margin:20%;
+    width:60%;
+    height:50%;
+}
+
+form{
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+form button{
+    width:25%;
+    margin: 3% auto;
+    background-color:rgb(83, 80, 80);
+    color:white;
 }
