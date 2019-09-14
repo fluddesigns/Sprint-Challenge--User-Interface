@@ -74,6 +74,19 @@ p {
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    margin-bottom:4%;
+    margin-top:1%;
+}
+
+.header a{
+    color:black;
+    text-decoration: none;
+    margin-right:3%;
+}
+
+.jumboImg{
+    margin-bottom:2%;
 }
 
 .top-content {
