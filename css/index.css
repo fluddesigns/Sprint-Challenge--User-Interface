@@ -71,11 +71,29 @@ p {
     margin: 0 auto;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom:4%;
+    margin-top:1%;
+}
+
+.header a{
+    color:black;
+    text-decoration: none;
+    margin-right:3%;
+}
+
+.jumboImg{
+    margin-bottom:2%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     border-bottom: 1px dashed black;
 }
 
@@ -85,7 +103,23 @@ p {
     padding-bottom: 20px;  
 }
 
+.top-content .text-container-about{
+    width: 98%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+
+@keyframes slideInFromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
 .middle-content {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -104,12 +138,49 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box:nth-child(1){
+    background:teal;
+}
+.box:nth-child(2){
+    background:gold;
+}
+.box:nth-child(3){
+    background:cadetblue;
+}
+
+.box:nth-child(4){
+    background:coral;
+}
+
+.box:nth-child(5){
+    background:crimson;
+}
+
+.box:nth-child(6){
+    background:forestgreen;
+}
+
+.box:nth-child(7){
+    background:darkorchid;
+}
+
+.box:nth-child(8){
+    background:hotpink;
+}
+
+.box:nth-child(9){
+    background:indigo;
+}
+
+.box:nth-child(10){
+    background:dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +214,68 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.flexContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.aboutBox{
+    border-bottom:1px dashed black;
+    width:48%;
+    margin-bottom: 6%;
+}
+
+.aboutBox img{
+    margin-bottom: 2%;
+}
+
+.aboutBox button{
+    border:1px solid black;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-radius: 6px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+    background-color:white;
+}
+
+button:hover{
+    background-color:gray;
+    color:white;
+}
+
+.bottomContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.form-container{
+    border:1px solid black;
+    border-radius: 6px;
+    padding:2%;
+    background-color:rgb(163, 158, 158);
+    color:white;
+    margin:20%;
+    width:60%;
+    height:50%;
+}
+
+form{
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+form button{
+    width:25%;
+    margin: 3% auto;
+    background-color:rgb(83, 80, 80);
+    color:white;
 }
